@@ -2,7 +2,7 @@
 $(function () {
     $('.summary').hide();
     $('.cdata-overlay').hide();
-//Get inputs
+//Getting inputs
 $("#checkout").click(function () {
     let flavour = $(".flavour option:selected").val();
     let size = $("#size option:selected").val();
@@ -19,7 +19,7 @@ $("#checkout").click(function () {
         //checking the price
         let price, totalPrice;
         switch (flavour) {
-            case flavour = "vegtikka":
+            case flavour = "vegfeast":
                 switch (size) {
                     case size = "regular":
                         price = 350;
