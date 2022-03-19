@@ -46,7 +46,7 @@ body {
     color: black;
 }
 #piz {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100px;
     font-weight: normal;
     color: rgb(209, 108, 14);
@@ -70,7 +70,7 @@ li {
 
 #list li {
     font-size: 24px;
-    font-family: system-ui, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .order-overlay {
     height: inherit;
@@ -113,7 +113,7 @@ h4 {
 }
 .order-summary h1, .summary, .contact {
     color: #000;
-    font-family: 'Love Ya Like A Sister', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 30px;
 }
 .cdata {
