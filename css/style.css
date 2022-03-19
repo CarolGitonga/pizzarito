@@ -27,12 +27,13 @@ body {
 }
 
 .landing-text h1, h2 {
-    font-family: 'Love Ya Like A Sister', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .landing-text h1 {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 60px;
+    
 }
 
 .h-buttons {
