@@ -179,7 +179,7 @@ $("#checkout").click(function () {
                         break;
                 };
                 break;
-            case flavour = "boerewors":
+            case flavour = "spicyboerewors":
                 switch (size) {
                     case size = "regular":
                         price = 350;
