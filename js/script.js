@@ -1,8 +1,8 @@
 
 $(function () {
     $('.summary').hide();
-    $('.cdata-overlay').hide();
-//Getting inputs
+    $('.checkdata-overlay').hide();
+
 $("#checkout").click(function () {
     let flavour = $(".flavour option:selected").val();
     let size = $("#size option:selected").val();
@@ -11,12 +11,12 @@ $("#checkout").click(function () {
     let number = $("#number").val();
     console.log(size);
 
-        //Function order
+        
         let order = (flavour, size, crust, topping, number, total) => {
             return {flavour, size, crust, topping, number, total};
         };
 
-        //checking the price
+        
         let price, totalPrice;
         switch (flavour) {
             case flavour = "vegfeast":
@@ -378,14 +378,12 @@ $("#checkout").click(function () {
 
         }
 
-        //Execute order function
+        
         let newOrder = order(flavour, size, crust, topping, number, totalPrice);
-        console.log(newOrder); // test func
+        console.log(newOrder); 
 
-        //create a new object
-        // let myOrder = JSON.stringify(JSON.parse(newOrder));
-
-        //Write to the order
+        
+        
         $('.summary').slideDown(2000);
         $('.cdata-overlay').slideUp();
         $('#list').slideDown();
@@ -393,15 +391,15 @@ $("#checkout").click(function () {
         $('.delivernot').show(1000);
 
         $('#list').text(" ");
-        $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   "
-            + newOrder.s + "<br>" + "Crust :     "
-            + newOrder.c + "<br>" + "Toppings :     "
-            + newOrder.t + "<br>" + " Number of pizzas :    "
-            + newOrder.n + "<br>" + "Total Price :  "
+        $("#list").append("<br>" + "Flavour :   " + newOrder.flavour + "<br>" + "Size :   "
+            + newOrder.size + "<br>" + "Crust :     "
+            + newOrder.crust + "<br>" + "Toppings :     "
+            + newOrder.topping + "<br>" + " Number of pizzas :    "
+            + newOrder.number + "<br>" + "Total Price :  "
             + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
     });
 
-    //Deliver
+    
     $(".deliver").click(function () {
         $('.summary').slideUp();
         $('#list').slideUp();
@@ -412,12 +410,12 @@ $("#checkout").click(function () {
     });
 
 
-    //Pick Up
+    
     $(".delivernot").click(function () {
 
     });
 
-   //Scrollify
+   
    $(function () {
     $.scrollify.move('#sum-order');
 });
