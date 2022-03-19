@@ -6,6 +6,7 @@
     background-size:cover
 
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -105,11 +106,15 @@ h4 {
 
 #order-pizza {
     padding: 20px 50px 20px 50px;
-    font-family: 'Love Ya Like A Sister', cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .checkout {
     border-radius: 20px;
     margin-top: 20px;
+}
+
+#list {
+    color: #000;
 }
 .order-summary h1, .summary, .contact {
     color: #000;
@@ -124,9 +129,7 @@ h4 {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
 }
-.go {
-    border-radius: 20px;
-}
+
 .contact {
     padding-top: 20px;
 }

@@ -342,7 +342,7 @@ $("#checkout").click(function () {
                 break;
         }
         switch (topping) {
-            case topping = "tomato":
+            case topping = "zucchini":
                 totalPrice = totalPrice + 100;
                 break;
             case topping = "onions":
@@ -354,7 +354,7 @@ $("#checkout").click(function () {
             case topping = "greenpepper":
                 totalPrice = totalPrice + 100;
                 break;
-            case topping = "olives":
+            case topping = "artichokes":
                 totalPrice = totalPrice + 150;
                 break;
             case topping = "pineapple":
@@ -363,7 +363,7 @@ $("#checkout").click(function () {
             case topping = "sweetcorn":
                 totalPrice = totalPrice + 150;
                 break;
-            case topping = "macon":
+            case topping = "cauliflower":
                 totalPrice = totalPrice + 150;
                 break;
             case topping = "mince":
