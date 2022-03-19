@@ -99,7 +99,7 @@ $("#checkout").click(function () {
                         break;
                 };
                 break;
-            case flavour = "periperi":
+            case flavour = "cheeseburger":
                 switch (size) {
                     case size = "regular":
                         price = 350;
@@ -219,7 +219,7 @@ $("#checkout").click(function () {
                         break;
                 };
                 break;
-            case flavour = "hawaiian":
+            case flavour = "chickenhawaiian":
                 switch (size) {
                     case size = "regular":
                         price = 350;
